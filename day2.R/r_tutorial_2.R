@@ -1,5 +1,5 @@
 
-microbial_genomes = read.table("http://cgs.wustl.edu/~mgibson/swc/microbial_genome.txt", header=T, sep="\t")
+microbial_genomes = read.table("microbial_genome.txt", header=T, sep="\t")
 
 #Split-combine-apply strategies with the plyr package
 

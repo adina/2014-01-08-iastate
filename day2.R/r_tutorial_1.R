@@ -167,8 +167,10 @@ Genomes.data = data.frame(Phyla, Genome_Size, Gene_Count)
 Genomes.data
 
 #Note that here `Phyla` has been converted from `character` to `factor`. We can see this by looking at the structure of the object using `str()`:
-  
+
 str(Genomes.data)
+
+help(str) # What does this do again??
 
 #We haven't talked about `factors` yet, but they are useful for handling nominal and ordered <i>categorical</i> data.  To avoid this you can set the `stringsAsFactors` argument to `FALSE`:
 
@@ -287,7 +289,7 @@ getwd()
 
 #For example, we had been working with a small subset of the genome metadata from IMG. If we wanted to load the entire table to work with, we could do so using the `read.table()` function:
   
-microbial_genomes = read.table("http://cgs.wustl.edu/~mgibson/swc/microbial_genome.txt", header=T, sep="\t")
+microbial_genomes = read.table("microbial_genome.txt", header=T, sep="\t")
 microbial_genomes[1:5,1:5]
 
 #The first argument specifies the location of the file, in this case it is a URL pointing to a file on a web server. The second argument, `header=T` tells R that the first line of the file contains variable names. The third argument tells R what character separates fields for an observation. The default for this is any blank space. This can also be useful if you want to read in `.csv` files as you can set `sep=","`. 
