@@ -1,4 +1,4 @@
-2000	Algeria	3	1	1
+2000	Algeria	3000	1	1
 2000	Argentina	3	17	0
 2000	Armenia	1	0	0
 2000	Australia	54	69	60
